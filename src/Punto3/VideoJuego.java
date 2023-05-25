@@ -4,8 +4,8 @@ public class VideoJuego implements Comportamiento{
     private String titulo = "hola chiquess";
     private Float horas = (float)10;
     private Boolean entregado = false;
-    private String genero = "Guarachaaa";
-    private String compañia = "tu vieja";
+    private String genero = "aventura";
+    private String compañia = "santa monica";
 
     public VideoJuego() {
     }
@@ -56,12 +56,12 @@ public class VideoJuego implements Comportamiento{
 
     @Override
     public String toString() {
-        return "VideoJuego{" +
-                "titulo='" + titulo + '\'' +
-                ", horas=" + horas +
-                ", entregado=" + entregado +
-                ", genero='" + genero + '\'' +
-                ", compañia='" + compañia + '\'' +
+        return "VideoJuego{\n +" +
+                "titulo:......." + titulo + '\n' +
+                "horas:........" + horas + '\n' +
+                "entregado:...." + entregado + '\n' +
+                "genero:......." + genero + '\n' +
+                "compañia:......" + compañia + '\n' +
                 '}';
     }
 

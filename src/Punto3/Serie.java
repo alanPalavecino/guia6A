@@ -1,10 +1,13 @@
 package Punto3;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Serie implements Comportamiento {
-    private String titulo ="";
+    private String titulo ="hola";
     private Integer cantTemporadas=3;
     private Boolean entregado=false;
-    private String creador="";
+    private String creador="mundo";
     private Genero genero = Genero.TERROR;
 
     public Serie() {
@@ -54,16 +57,20 @@ public class Serie implements Comportamiento {
         this.genero = genero;
     }
 
+
     @Override
     public String toString() {
-        return "Serie{" +
-                "titulo='" + titulo + '\'' +
-                ", cantTemporadas=" + cantTemporadas +
-                ", entregado=" + entregado +
-                ", creador='" + creador + '\'' +
-                ", genero=" + genero +
+        return "Serie{\n" +
+                "titulo:..............." + titulo + '\n' +
+                "cantTemporadas:......." + cantTemporadas + '\n' +
+                "entregado:............" + entregado +  '\n' +
+                "creador:.............." + creador + '\n' +
+                "genero:..............." + genero +  '\n' +
                 '}';
     }
+
+
+
 
     @Override
     public void entregar() {
